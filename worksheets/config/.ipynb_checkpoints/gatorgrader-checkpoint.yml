@@ -1,0 +1,25 @@
+---
+name: cmpsc-100-week-08-worksheets
+break: true
+indent: 4
+---
+
+Week 08 - Worksheet 0 - Modules.ipynb:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    CountMarkdownTags --tag "image" --count 1
+
+worksheet_0_image.png:
+    ConfirmFileExists
+    
+worksheet_1_final_collage.png:
+    ConfirmFileExists
+    
+    
+Week 08 - Worksheet 1 - Functions.ipynb:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    CountMarkdownTags --tag "image" --count 1
+
+ExecuteCommand --command "python3 Week_08_-_Worksheet_0_-_Modules.py"
+ExecuteCommand --command "python3 Week_08_-_Worksheet_1_-_Functions.py"

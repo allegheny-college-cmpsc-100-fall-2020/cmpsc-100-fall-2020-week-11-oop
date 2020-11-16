@@ -1,0 +1,26 @@
+---
+name: cmpsc-100-week-11-worksheets
+break: true
+indent: 4
+---
+Week 11 - Worksheet 0 - Classes.ipynb:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    MatchFileFragment --fragment "Cat(" --count 2
+    MatchFileFragment --fragment "class Cat" --count 2
+
+Week 11 - Worksheet 1 - Classes.ipynb:
+    ConfirmFileExists
+    MatchFileFragment --fragment "from Cat import Cat" --count 1        
+    MatchFileFragment --fragment "Cat(" --count 2
+    MatchFileFragment --fragment "for cat in cats" --count 2
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    MatchFileFragment --fragment "ulysses.is_friends_with(" --count 1
+
+Cat.py:
+    ConfirmFileExists
+    MatchFileFragment --fragment "def is_friends_with(self" --count 1 --exact
+
+CountCommandOutput --command "python3 Week_11_-_Worksheet_0_-_Classes.py" --count 2
+CountCommandOutput --command "python3 Week_11_-_Worksheet_1_-_Classes.py" --count 5
+ExecuteCommand --command "python3 Cat.py"
