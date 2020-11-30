@@ -17,4 +17,13 @@ class Cat:
         tabby = "tabby" if self.is_tabby else "non-tabby"
         return f"{self.name} is a {self.fur_color} {tabby} cat." 
     
-    # TODO: Write is_friends_with function
+    def is_friends_with(self, cat):
+    """Determines if two cats are friends based on rules
+    
+    Keyword arguments: 
+    cat -- cat object to compare
+    """
+        if self.is_tabby and cat.is_tabby:
+            return f"{self.name} is friends with {cat.name}."
+        return f"{self.name} is not friends with {cat.name}."
+    
